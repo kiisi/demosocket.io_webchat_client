@@ -1,0 +1,19 @@
+.app{
+    min-height:100vh;
+}
+.grid-wrapper{
+    display:grid;
+    place-items:center;
+}
+.max-wrapper{
+    max-width:1400px;
+    width:92%;
+}
+.btn-large{
+    padding:1rem 2rem;
+    background:#FF7800;
+    border-radius: 5px;
+    font-size:1.4rem;
+    font-weight:500;
+    color:#ffff;
+}
