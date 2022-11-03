@@ -4,6 +4,10 @@
     background:var(--primary-color);
     padding:1.5rem 0;
     cursor:pointer;
+    
+    @media screen and (max-width:1024px){
+        background: var(--primary-color-dark);
+    }
 
 
     .nav{
@@ -119,15 +123,23 @@
                     font-size:22px !important;
                 }
 
+                &:hover{
+                    color:#ff8d00;
+                }
+
                 @media screen and (max-width:768px){
                     margin-right:1rem;
                 }
+
             }
 
             &-order{
                 background:#FF7800;
                 margin-right: 2rem;
 
+                &:hover{
+                    background:#ff9333;
+                }
 
                 @media screen and (max-width:768px){
                     margin-right:1rem;
@@ -143,4 +155,38 @@
     }
 }
 
+/* MOBILE NAVIGATION BACKGROUND */
+.mobile-nav-bg{
+    background-color: rgba(36,48,53,.49);
+    height:100%;
+    width:100%;
+    position:fixed;
+    left:0;
+}
+
 /* MOBILE NAVIGATION */
+.mobile-nav{
+    height:100%;
+    width:100%;
+    max-width: 35rem;
+    right:0;
+    background:#fff;
+    position:fixed;
+    padding:1.5rem 3rem;
+    padding-top:4.5rem;
+
+
+    &-items{
+        font-size:1.8rem;
+        color:var(--primary-color);
+
+
+        &-item{
+            display:flex;
+            align-items:center;
+            justify-content: space-between;
+            margin-bottom:2rem;
+        }
+
+    }
+}

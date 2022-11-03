@@ -10,6 +10,8 @@
 }
 :root{
   --primary-color:#0E6295;
+  --primary-color-dark:#00466F;
+
   --secondary-color:#F7D328;
 }
 html{
