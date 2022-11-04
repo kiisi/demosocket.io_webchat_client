@@ -4,11 +4,7 @@
     background:var(--primary-color);
     padding:1.5rem 0;
     cursor:pointer;
-    
-    @media screen and (max-width:1024px){
-        background: var(--primary-color-dark);
-    }
-
+    z-index: 9999;
 
     .nav{
         display:flex;
@@ -162,6 +158,12 @@
     width:100%;
     position:fixed;
     left:0;
+    display:none;
+    z-index:7777;
+
+    &.show-m-nav-bg{
+        display: block;
+    }
 }
 
 /* MOBILE NAVIGATION */
@@ -169,11 +171,19 @@
     height:100%;
     width:100%;
     max-width: 35rem;
-    right:0;
+    right:-35rem;
     background:#fff;
     position:fixed;
-    padding:1.5rem 3rem;
     padding-top:4.5rem;
+    padding-bottom: 1.4rem;
+    z-index:8888;
+    transition:250ms ease;
+
+    &.show-m-nav{
+        right:0;
+    }
+
+    
 
 
     &-items{
@@ -185,7 +195,11 @@
             display:flex;
             align-items:center;
             justify-content: space-between;
-            margin-bottom:2rem;
+            padding: 1rem 3rem;
+            
+            &:hover{
+                background:#EAF0F3;
+            }
         }
 
     }

@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Catamaran:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Overlock:regular,italic,700,700italic,900,900italic);
 
 *{
   margin:0;
@@ -7,6 +8,7 @@
 }
 :root{
   --primary-font: 'Catamaran', sans-serif;
+  --secondary-font: 'Overlock', sans-serif;
 }
 :root{
   --primary-color:#0E6295;
@@ -17,8 +19,4 @@
 html{
   font-family:var(--primary-font);
   font-size:62.5%;
-}
-
-body{
-  background:var(--primary-color)
 }
