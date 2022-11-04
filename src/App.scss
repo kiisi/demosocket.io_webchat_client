@@ -8,6 +8,17 @@
 .max-wrapper{
     max-width:1400px;
     width:92%;
+
+    &-title{
+        font-size: 4.4rem;
+        color:var(--primary-color);
+        display:grid;
+        place-items: center;
+        font-family: var(--secondary-font);
+        text-align: center;
+        font-weight: 600;
+        padding-bottom:2rem;
+    }
 }
 .btn-large{
     padding:1rem 2rem;
@@ -20,4 +31,8 @@
     &:hover{
         background:#ff9333;
     }
+}
+
+.max-big-spacing{
+    padding: 6rem 0;
 }
