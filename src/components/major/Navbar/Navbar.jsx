@@ -63,8 +63,7 @@ const Navbar = () => {
               </div>
             </div>
 
-            <div className="nav-items-login"><span className="material-icons">logout</span>LOG IN</div>
-            <div className="nav-items-order btn-large">ORDER NOW</div>
+            <div className="nav-items-order btn-large">LOG IN</div>
             <div className="nav-menu" >
               <span className="material-icons"onClick={handleClick}>{click ? 'close' : 'menu'}</span>
             </div>

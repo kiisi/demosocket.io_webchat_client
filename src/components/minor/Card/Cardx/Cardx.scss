@@ -19,6 +19,10 @@
         h1{
             font-size: 5rem;
             font-weight: 300;
+
+            @media screen and (max-width:768px){
+                font-size: 4rem;
+            }
         }
         span{
             font-size: 1.8rem;
