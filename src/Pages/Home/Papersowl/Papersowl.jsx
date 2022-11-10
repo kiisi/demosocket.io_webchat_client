@@ -7,8 +7,8 @@ import './Papersowl.scss'
 const Papersowl = () => {
     return (
         <div className="grid-wrapper max-big-spacing">
-            <div className="papersowl max-wrapper">
-                <h1 className="papersowl-title max-wrapper-title">With Papersowl</h1>
+            <div className="max-wrapper">
+                <h1 className="max-wrapper-title">With Papersowl</h1>
                 <div className="papersowl-content">
                     <div className="papersowl-content-card">
                         <img src={message} alt ="papersowl content card svg"/>

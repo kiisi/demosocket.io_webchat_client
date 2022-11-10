@@ -1,0 +1,64 @@
+.choose-expert-wrapper{
+    background: #EBF8FF;
+
+    .choose-expert-title{
+        padding-bottom: 5rem;
+    }
+
+    .choose-expert-content{
+        display: flex;
+        justify-content: space-around;
+        font-size: 2rem;
+        color:var(--primary-color);
+        flex-wrap: wrap;
+
+        &-card{
+            margin-bottom: 3rem;
+            
+            p{
+                padding-left: 3.5rem;
+                position: relative;
+                max-width: 35rem;
+                padding-right: 3.5rem;
+
+
+                &::before{
+                    content: url(../../../assets//check.svg);
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    padding-top: 4px;
+                }
+
+                span{
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}
+
+.expert{
+    background:var(--primary-color);
+    padding:6rem 0;
+}
+
+.expert-slick-slider{
+    width:90% !important;
+    max-width:120rem !important;
+    margin:0 auto !important;
+    cursor:pointer;
+}
+
+
+.slick-dots li button:before{
+    font-size:9px !important;
+    color:#EBF8FF !important;
+}
+.slick-dots li button:before{
+    opacity:1 !important;
+}
+.slick-dots li.slick-active button:before{
+    color:#ff9333 !important;
+    opacity:1 !important;
+}
