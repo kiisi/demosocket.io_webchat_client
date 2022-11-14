@@ -11,7 +11,7 @@ const Hero = () => {
           <div className="btn-large hero-btn">GET HELP NOW</div>
         </div>
         <div className="hero-img">
-          <img src={hero_image} alt="Hero Image"/>
+          <img src={hero_image} alt="Hero"/>
         </div>
       </div>
     </div>
