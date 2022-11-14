@@ -1,13 +1,17 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import './Navbar.scss'
 import logo from '../../../assets/logo_v2.png'
 const Navbar = () => {
 
   const [click, setClick] = useState(false)
 
-  const handleClick = () =>{
-    setClick(!click)
+  const openClick = () => {
+    setClick(true)
   }
+  const closeClick = () => {
+    setClick(false)
+  }
+
   return (
 
     <>
@@ -65,16 +69,19 @@ const Navbar = () => {
 
             <div className="nav-items-order btn-large">LOG IN</div>
             <div className="nav-menu" >
-              <span className="material-icons"onClick={handleClick}>{click ? 'close' : 'menu'}</span>
+              <span className="material-icons" onClick={openClick}>menu</span>
             </div>
           </div>
 
         </nav>
       </div>
-      
-      <div className={click ? "mobile-nav-bg show-m-nav-bg" : "mobile-nav-bg"}></div>
+
+      <div className={click ? "mobile-nav-bg show-m-nav-bg" : "mobile-nav-bg"} onClick={closeClick}></div>
 
       <div className={click ? "mobile-nav show-m-nav" : "mobile-nav"}>
+        <div className="mobile-nav-close">
+        <span className="material-icons" onClick={closeClick}>close</span>
+        </div>
         <div className="mobile-nav-items">
           <div className="mobile-nav-items-item">Services <span className="material-icons">chevron_right</span></div>
           <div className="mobile-nav-items-item">Writing Tools <span className="material-icons">chevron_right</span></div>
