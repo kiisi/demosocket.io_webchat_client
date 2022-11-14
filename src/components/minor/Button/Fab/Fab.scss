@@ -10,22 +10,9 @@
     bottom:1%;
     right:2%;
     transform:translate(-2%,-11%);
-    display:none;
+    display:grid;
 }
 .fab span{
     color:white;
     pointer-events: none;
-}
-.fab.fab-show{
-    display:grid;
-    animation: show-effect 1s ease;
-}
-
-@keyframes show-effect{
-    from{
-        opacity:0;
-    }
-    to{
-        opacity:1;
-    }
 }
