@@ -13,6 +13,7 @@ import Cardxx from '../../../components/minor/Card/Cardxx/Cardxx';
 const Experts = () => {
 
     let settings = {
+        autoplay:true,
         dots: true,
         infinite: true,
         speed: 500,
@@ -22,12 +23,10 @@ const Experts = () => {
         arrows: false,
         responsive: [
             {
-                breakpoint: 900,
+                breakpoint: 945,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
                 }
             },
             {
