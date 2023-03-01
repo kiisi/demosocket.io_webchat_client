@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { UserContext } from './UserContext'
@@ -11,7 +11,7 @@ const App = () => {
 
   const [user, setUser] = useState(null)
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const verifyUser = async () => {
       try {
         const res = await fetch('http://localhost:5000/verifyuser', {
